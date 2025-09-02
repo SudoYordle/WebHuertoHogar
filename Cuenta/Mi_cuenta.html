@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Cuenta - Huerto Hogar</title>
+    <link rel="stylesheet" href="Cuenta.css">
+</head>
+<body>
+    <main class="form-container">
+        <h2>Mi Cuenta</h2>
+        <form id="formCuenta">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" value="Juan Pérez" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="juanperez@email.com" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" value="Av. Siempre Viva 123" required>
+
+            <button type="submit">Guardar cambios</button>
+        </form>
+        <button id="cerrarSesion" style="margin-top:20px;">Cerrar sesión</button>
+    </main>
+    <script>
+        // Solo ejemplo visual, no guarda datos reales
+        document.getElementById('formCuenta').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Datos actualizados correctamente.');
+        };
+        document.getElementById('cerrarSesion').onclick = function() {
+            alert('Sesión cerrada.');
+            // Aquí podrías redirigir a la página de inicio de sesión
+        };
+    </script>
