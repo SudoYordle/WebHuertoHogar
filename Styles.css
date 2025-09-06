@@ -52,6 +52,8 @@ footer {
   font-size: 0.85rem;
 }
 
+
+/**/
 .img-categoria {
     width: 100%;
     height: 180px;         /* Puedes ajustar la altura según tu preferencia */
@@ -82,7 +84,8 @@ footer {
 .carousel-item {
     text-align: center;
     padding: 10px;
-    background-color: #ecd978; /* Fondo amarillo claro */
+    max-width: 100%;
+    background-color: #eacf4b; /* Fondo amarillo claro */
     box-shadow: 0 6px 24px rgba(0,0,0,0.13), 0 1.5px 4px rgba(0,0,0,0.10);
     border-radius: 12px;
     transition: box-shadow 0.2s;
@@ -104,3 +107,12 @@ footer {
     background-color: black;
 }
 
+.categorias-destacadas {
+  background-color:#2E8B57 ;
+  border-radius: 22px;
+}
+
+.productos-destacadas {
+  background-color: #ecd978;
+  padding: 50px;
+}

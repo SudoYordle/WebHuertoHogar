@@ -1,277 +1,229 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Huerto Hogar</title>
     <link rel="stylesheet" href="Styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Enncabezado y nav -->
-    <header class="container-nav">
+    <!-- Encabezado y navegación principal -->
+    <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid p-4" style="background-color: #ffb700;">
-            <div class="navbar-brand" style="font-size: 30px;"><h1>Huerto Hogar</h1></div> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid p-4" style="background-color: #ffb700;">
+          <a class="navbar-brand" href="#" style="font-size: 30px;">
+            <h1>HUERTO HOGAR</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!--
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-              -->
-                <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="Blog.html">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Catalogo
-                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="Catalogo/Frutas.html">Frutas Frescas</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="Catalogo/Verduras.html">Verduras Orgánicas</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="Catalogo/Prod_organicos.html">Productos Orgánicos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="Catalogo/Prod_lacteos.html">Productos Lácteos</a></li>
+                  <li><a class="dropdown-item" href="Catalogo/Frutas.html">Frutas Frescas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Catalogo/Verduras.html">Verduras Orgánicas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Catalogo/Prod_organicos.html">Productos Orgánicos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Catalogo/Prod_lacteos.html">Productos Lácteos</a></li>
                 </ul>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cuenta
-                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="Cuenta/Inic_sesion.html">Inicia Sesión</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="Cuenta/Registrar.html">Regístrate</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="Cuenta/Mi_cuenta.html">Mi Cuenta</a></li>
+                  <li><a class="dropdown-item" href="Cuenta/Inic_sesion.html">Inicia Sesión</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Cuenta/Registrar.html">Regístrate</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Cuenta/Mi_cuenta.html">Mi Cuenta</a></li>
                 </ul>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled " aria-disabled="true">disable</a>
-                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">disable</a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
-            </div>
-            <!-- Carrito de compra -->
-            <div class="d-flex align-items-center" style="margin-left: 40px;">
-              <a href="#" class="btn position-relative" id="carritoBtn" style="font-size: 1.5rem;">
-                <!-- Ícono de carrito SVG -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                </svg>
-                <!-- Contador del carrito -->
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carritoContador">
-                  0
-                  <span class="visually-hidden">productos en el carrito</span>
-                </span>
-              </a>
-            </div>
-      </div>
+          </div>
+          <!-- Carrito de compras -->
+          <div class="d-flex align-items-center" style="margin-left: 40px;">
+            <a href="Carrito/Carrito.html" class="btn position-relative" id="carritoBtn" style="font-size: 1.5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              </svg>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carritoContador">
+                0
+                <span class="visually-hidden">productos en el carrito</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <!-- Cuerpo -->
     <main>
-
       <!-- Sección de categorías destacadas -->
       <section class="categorias-destacadas m-3">
-        <h3 class="text-center mb-4">Categorías Destacadas</h3>
+        <h1 class="text-center mb-4" style="font-size: 3rem; letter-spacing: 2px; color: #ffd966; text-shadow: 2px 2px 8px #ffd966;">Categorías Destacadas</h1>
         <div class="row justify-content-center">
-          <div class="col-md-3 col-6 mb-4">
+          <article class="col-md-3 col-6 mb-4">
             <div class="card h-100 text-center">
               <img src="img/FRUTAS-CHARITO-PORTADA-431.png" class="card-img-top img-categoria" alt="Frutas frescas">
               <div class="card-body">
-                <h5 class="card-title">Frutas Frescas</h5>
+                <h3 class="card-title">Frutas Frescas</h3>
                 <a href="Catalogo/Frutas.html" class="btn btn-outline-success">Ver más</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
+          </article>
+          <article class="col-md-3 col-6 mb-4">
             <div class="card h-100 text-center">
               <img src="img/istockphoto-1203599923-170667a.jpg" class="card-img-top img-categoria" alt="Verduras orgánicas">
               <div class="card-body">
-                <h5 class="card-title">Verduras Orgánicas</h5>
+                <h3 class="card-title">Verduras Orgánicas</h3>
                 <a href="Catalogo/Verduras.html" class="btn btn-outline-success">Ver más</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
+          </article>
+          <article class="col-md-3 col-6 mb-4">
             <div class="card h-100 text-center">
               <img src="img/productos-lacteos.jpg" class="card-img-top img-categoria" alt="Productos lácteos">
               <div class="card-body">
-                <h5 class="card-title">Productos Lácteos</h5>
+                <h3 class="card-title">Productos Lácteos</h3>
                 <a href="Catalogo/Prod_lacteos.html" class="btn btn-outline-success">Ver más</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
+          </article>
+          <article class="col-md-3 col-6 mb-4">
             <div class="card h-100 text-center">
               <img src="img/alimentos-integrales-1024x576.jpg" class="card-img-top img-categoria" alt="Productos orgánicos">
               <div class="card-body">
-                <h5 class="card-title">Productos Orgánicos</h5>
+                <h3 class="card-title">Productos Orgánicos</h3>
                 <a href="Catalogo/Prod_organicos.html" class="btn btn-outline-success">Ver más</a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
-      <!-- Carrusel Bootstrap-->
-      <h3 class="text-center mb-4" >Productos Destacados</h3>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        
+      <!-- Carrusel de productos destacados -->
+      <section class="productos-destacadas m-3" aria-label="Productos destacados">
+        <h2 class="text-center mb-4" style="font-size: 3rem; letter-spacing: 2px; color: #2E8B57; text-shadow: 2px 2px 8px #ffd966;">Productos Destacados</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="IMG/tappys-heritage-IMG_8813.jpg" class="card-img-top img-categoria2" alt="...">
+            <article class="carousel-item active">
+              <img src="https://freshmate.cl/cdn/shop/files/naranjas_en_bowl_de_madera_2__29_11zon.webp?v=1724716537&width=713" class="card-img-top img-categoria2" alt="Naranjas Valencia">
               <div class="card-body">
-                <h1 class="card-title">Tomates</h1>
-                <p class="card-text">jugosos, de piel lisa y brillante, con un sabor equilibrado entre dulzura y acidez. <br> Son ideales para ensaladas, salsas, jugos o simplemente disfrutarlos al natural, aportando frescura, vitaminas y un toque vibrante de color a cualquier preparación.</p>
-                <a href="#" class="btn btn-primary">Ir a la pagina</a>
+                <h3 class="card-title">Naranjas Valencia</h3>
+                <p class="card-text">Jugosas y ricas en vitamina C, estas naranjas Valencia son ideales para zumos frescos y refrescantes. Cultivadas en condiciones climáticas óptimas que aseguran su dulzura y jugosidad.</p>
+                <a href="#" class="btn btn-primary">Ir a la página</a>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/img2.rtve.jpg" class="card-img-top img-categoria2" alt="...">
+            </article>
+            <article class="carousel-item">
+              <img src="IMG/img2.rtve.jpg" class="card-img-top img-categoria2" alt="Zanahorias">
               <div class="card-body">
-                <h1 class="card-title">Zanahorias</h1>
-                <p class="card-text">crujientes, dulces y de intenso color naranja. <br> Son una fuente natural de vitaminas y antioxidantes, perfectas para consumir crudas, en ensaladas, jugos o como base de guisos y sopas.</p>
-                <a href="#" class="btn btn-primary">Ir a la pagina</a>
+                <h3 class="card-title">Zanahorias</h3>
+                <p class="card-text">Crujientes, dulces y de intenso color naranja. Son una fuente natural de vitaminas y antioxidantes, perfectas para consumir crudas, en ensaladas, jugos o como base de guisos y sopas.</p>
+                <a href="#" class="btn btn-primary">Ir a la página</a>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/quesofresco-header_3.jpg" class="card-img-top img-categoria2" alt="...">
+            </article>
+            <article class="carousel-item">
+              <img src="IMG/quesofresco-header_3.jpg" class="card-img-top img-categoria2" alt="Queso Cremoso">
               <div class="card-body">
-                <h1 class="card-title">Queso Cremoso</h1>
-                <p class="card-text">cremoso y suave, con un sabor delicado y natural. <br> Ideal para acompañar ensaladas, panes, frutas o como ingrediente en múltiples preparaciones, aportando frescura y proteína de calidad.</p>
-                <a href="#" class="btn btn-primary">Ir a la pagina</a>
+                <h3 class="card-title">Queso Cremoso</h3>
+                <p class="card-text">Cremoso y suave, con un sabor delicado y natural. Ideal para acompañar ensaladas, panes, frutas o como ingrediente en múltiples preparaciones, aportando frescura y proteína de calidad.</p>
+                <a href="#" class="btn btn-primary">Ir a la página</a>
               </div>
-            </div>
-          </div>  
+            </article>
+          </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Anterior</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">Siguiente</span>
           </button>
-        </div>  
-      </div>
-          
+        </div>
+      </section>
 
       <!-- Sección de beneficios -->
       <section class="beneficios py-5 bg-light">
         <div class="container">
-          <h3 class="text-center mb-4">¿Por qué elegirnos?</h3>
+          <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
           <div class="row text-center">
-            <div class="col-md-4 mb-3">
+            <article class="col-md-4 mb-3">
               <img src="img/6007398.png" alt="Frescura" width="60">
-              <h5 class="mt-2">Frescura Garantizada</h5>
+              <h3 class="mt-2">Frescura Garantizada</h3>
               <p>Productos recién cosechados y seleccionados para ti.</p>
-            </div>
-            <div class="col-md-4 mb-3">
+            </article>
+            <article class="col-md-4 mb-3">
               <img src="img/7296451.png" alt="Sostenibilidad" width="60">
-              <h5 class="mt-2">Sostenibilidad</h5>
+              <h3 class="mt-2">Sostenibilidad</h3>
               <p>Apoyamos a agricultores locales y prácticas responsables.</p>
-            </div>
-            <div class="col-md-4 mb-3">
+            </article>
+            <article class="col-md-4 mb-3">
               <img src="img/pngtree-fast-delivery-truck-shipping-png-image_6529765.png" alt="Envío rápido" width="60">
-              <h5 class="mt-2">Envío Rápido</h5>
+              <h3 class="mt-2">Envío Rápido</h3>
               <p>Recibe tus productos en la puerta de tu casa en poco tiempo.</p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Pie de Pagina-->
-  <footer>
-    <div class="footer-container">
-      <!-- Columna izquierda -->
-      <section>
-        <h3>Misión</h3>
-        <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta
-          la puerta de nuestros clientes, garantizando la frescura y el sabor en cada entrega. Nos
-          comprometemos a fomentar una conexión más cercana entre los consumidores y los agricultores
-          locales, apoyando prácticas agrícolas sostenibles y promoviendo una alimentación saludable en
-          todos los hogares chilenos.</p>
-
-        <h3>Visión</h3>
-        <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en
-          Chile, reconocida por nuestra calidad excepcional, servicio al cliente y compromiso con la
-          sostenibilidad. Aspiramos a expandir nuestra presencia a nivel nacional e internacional,
-          estableciendo un nuevo estándar en la distribución de productos agrícolas directos del productor al
-          consumidor.</p>
-
-        <a href="Tiendas.html"><h3>Tiendas</h3></a>
-        <ul>
-          <li>Santiago</li>
-          <li>Puerto Montt</li>
-          <li>Villarica</li>
-          <li>Nacimiento</li>
-          <li>Viña del Mar</li>
-          <li>Valparaíso</li>
-          <li>Concepción</li>
-        </ul>
-      </section>
-
-      <!-- Columna derecha -->
-      <section>
-        <h3>Redes Sociales</h3>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-
-        <h3>Centro de Ayuda</h3>
-        <ul>
-          <li><a href="#">Preguntas frecuentes</a></li>
-          <li><a href="#">Políticas de despacho</a></li>
-          <li><a href="#">Devoluciones</a></li>
-        </ul>
-
-        <h3>Contacto</h3>
-        <p>Email: contacto@huertohogar.cl</p>
-        <p>Tel: +56 9 1234 5678</p>
-      </section>
-    </div>
-
+    <!-- Pie de página -->
+    <footer>
+      <div class="footer-container">
+        <section>
+          <h3>Misión</h3>
+          <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta la puerta de nuestros clientes, garantizando la frescura y el sabor en cada entrega. Nos comprometemos a fomentar una conexión más cercana entre los consumidores y los agricultores locales, apoyando prácticas agrícolas sostenibles y promoviendo una alimentación saludable en todos los hogares chilenos.</p>
+          <h3>Visión</h3>
+          <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en Chile, reconocida por nuestra calidad excepcional, servicio al cliente y compromiso con la sostenibilidad. Aspiramos a expandir nuestra presencia a nivel nacional e internacional, estableciendo un nuevo estándar en la distribución de productos agrícolas directos del productor al consumidor.</p>
+          <a href="Mapa/Tiendas.html"><h3>Tiendas</h3></a>
+          <ul>
+            <li>Santiago</li>
+            <li>Puerto Montt</li>
+            <li>Villarica</li>
+            <li>Nacimiento</li>
+            <li>Viña del Mar</li>
+            <li>Valparaíso</li>
+            <li>Concepción</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+          <h3>Centro de Ayuda</h3>
+          <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Políticas de despacho</a></li>
+            <li><a href="#">Devoluciones</a></li>
+          </ul>
+          <h3>Contacto</h3>
+          <p>Email: contacto@huertohogar.cl</p>
+          <p>Tel: +56 9 1234 5678</p>
+        </section>
+      </div>
       <div class="footer-bottom">
         <p>© 2025 HuertoHogar - Todos los derechos reservados</p>
       </div>
-  </footer>
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
 
     <!-- Scripts de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   </body>
 </html>

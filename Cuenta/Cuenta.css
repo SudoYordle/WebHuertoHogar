@@ -38,3 +38,19 @@
     text-align: center;
     margin-top: 18px; 
 }
+
+body {
+    background-color: #f0e5b2;
+}
+
+/* Js */
+
+.error-message {
+    color: #d32f2f; /* Rojo fuerte */
+    font-size: 0.95em;
+    margin-bottom: 4px;
+    min-height: 18px;
+}
+
+
+

@@ -1,11 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verduras</title>
+    <link rel="stylesheet" href="Catalogo.Css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Verduras</h1>
+    <!-- Encabezado y navegación principal -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid p-4" style="background-color: #ffb700;">
+                <div class="navbar-brand" style="font-size: 30px;">
+                    <h1>HUERTO HOGAR</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginaPrincipal.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Blog.html">Blog</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Frutas.html">Frutas Frescas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Verduras.html">Verduras Orgánicas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Prod_organicos.html">Productos Orgánicos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Prod_lacteos.html">Productos Lácteos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Cuenta/Inic_sesion.html">Inicia Sesión</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Cuenta/Registrar.html">Regístrate</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Cuenta/Mi_cuenta.html">Mi Cuenta</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">disable</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <!-- Carrito de compra -->
+                <div class="d-flex align-items-center" style="margin-left: 40px;">
+                    <a href="#" class="btn position-relative" id="carritoBtn" style="font-size: 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                        </svg>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carritoContador">
+                            0
+                            <span class="visually-hidden">productos en el carrito</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Catálogo principal -->
+    <main class="container mt-5">
+        <h1 class="mb-3 text-center fw-bold" style="font-size: 3rem; letter-spacing: 2px; color: #2E8B57; text-shadow: 2px 2px 8px #ffd966;">
+            Verduras
+        </h1>
+        <section class="row">
+            <!-- Zanahorias -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <img src="https://freshmate.cl/cdn/shop/files/zanahoria_en_tabla_de_madera_25_11zon.webp?v=1724717281&width=713" class="card-img-top" alt="Manzana Fuji">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Zanahorias Orgánicas</h5>
+                        <h6>VR001</h6>
+                        <p class="card-text">Precio: $900 CLP por kilo</p>
+                        <p class="card-text">Stock: 100 kilos</p>
+                        <p class="card-text">Zanahorias crujientes cultivadas sin pesticidas en la Región de O'Higgins.
+                                            Excelente fuente de vitamina A y fibra, ideales para ensaladas, jugos o como snack
+                                            saludable.</p>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Espinacas -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <img src="https://freshmate.cl/cdn/shop/files/espinaca_deshojada_en_tabla_de_madera_50_11zon.webp?v=1724716120&width=713" class="card-img-top" alt="Plátano Cavendish">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Espinacas Frescas</h5>
+                        <h6 class="card-text">VR002</h6>
+                        <p class="card-text">Precio: $700 CLP por bolsa de 500g</p>
+                        <p class="card-text">Stock: 80 bolsas</p>
+                        <p class="card-text">Espinacas frescas y nutritivas, perfectas para ensaladas y batidos verdes.
+                                            Estas espinacas son cultivadas bajo prácticas orgánicas que garantizan su calidad y valor
+                                            nutricional.</p>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Pimientos -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <img src="https://freshmate.cl/cdn/shop/files/pimenton_amarillo_en_tabla_de_madera_41.webp?v=1724716749&width=713" class="card-img-top" alt="Naranjas Valencia">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Pimientos Tricolores</h5>
+                        <h6 class="card-text">VR003</h6>
+                        <p class="card-text">Precio: $1,500 CLP por kilo</p>
+                        <p class="card-text">Stock: 120 kilos</p>
+                        <p class="card-text">Pimientos rojos, amarillos y verdes, ideales para salteados y platos
+                                            coloridos. Ricos en antioxidantes y vitaminas, estos pimientos añaden un toque vibrante
+                                            y saludable a cualquier receta.</p>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Albahaca -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <img src="https://freshmate.cl/cdn/shop/files/albahaca_en_tabla_de_madera_10_11zon.webp?v=1724715466&width=713" class="card-img-top" alt="Pepino Dulce">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Albahaca</h5>
+                        <h6>VR004</h6>
+                        <p class="card-text">Precio: $1,990 CLP por 200 grs</p>
+                        <p class="card-text">Stock: 10 kilos</p>
+                        <p class="card-text">Un sabor tan fresco que cada hoja parece darle un buen beso a tus platos. Perfecta para cuando tu pasta pide un poco de magia o tu pizza grita por más sabor.</p>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Brócoli  -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <img src="https://freshmate.cl/cdn/shop/files/brocolis_en_tabla_de_madera_21_11zon.webp?v=1724715646&width=713" class="card-img-top" alt="Kiwi">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Brócoli </h5>
+                        <h6>VR005</h6>
+                        <p class="card-text">Precio: $1,890 CLP por 1 uni</p>
+                        <p class="card-text">Stock: 200/uni</p>
+                        <p class="card-text">Brócoli fresco y natural, con un verde intenso que garantiza su calidad y frescura. Rico en vitaminas, minerales y fibra, es ideal para mantener una alimentación saludable.
+                                             Perfecto para ensaladas, sopas o salteados, su sabor suave y nutritivo lo convierte en un infaltable en tu cocina.</p>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Ajo -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <img src="https://freshmate.cl/cdn/shop/files/ajo_en_tabla_de_madera_9_11zon.webp?v=1724715447&width=713" class="card-img-top" alt="Mandarina">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ajo</h5>
+                        <h6>VR006</h6>
+                        <p class="card-text">Precio: $390 CLP por 1 uni</p>
+                        <p class="card-text">Stock: 200/uni</p>
+                        <p class="card-text">Con cada diente, garantizamos un aroma y un gusto que potenciará tus platos. Usarlo es abrir una puerta a un mundo de sabores intensos y memorables.</p>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Puedes agregar más frutas aquí -->
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <section>
+                <h3>Misión</h3>
+                <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta la puerta de nuestros clientes, garantizando la frescura y el sabor en cada entrega. Nos comprometemos a fomentar una conexión más cercana entre los consumidores y los agricultores locales, apoyando prácticas agrícolas sostenibles y promoviendo una alimentación saludable en todos los hogares chilenos.</p>
+                <h3>Visión</h3>
+                <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en Chile, reconocida por nuestra calidad excepcional, servicio al cliente y compromiso con la sostenibilidad. Aspiramos a expandir nuestra presencia a nivel nacional e internacional, estableciendo un nuevo estándar en la distribución de productos agrícolas directos del productor al consumidor.</p>
+                <a href="Tiendas.html"><h3>Tiendas</h3></a>
+                <ul>
+                    <li>Santiago</li>
+                    <li>Puerto Montt</li>
+                    <li>Villarica</li>
+                    <li>Nacimiento</li>
+                    <li>Viña del Mar</li>
+                    <li>Valparaíso</li>
+                    <li>Concepción</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+                <h3>Centro de Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Políticas de despacho</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+                <h3>Contacto</h3>
+                <p>Email: contacto@huertohogar.cl</p>
+                <p>Tel: +56 9 1234 5678</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 HuertoHogar - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 </body>
 </html>
