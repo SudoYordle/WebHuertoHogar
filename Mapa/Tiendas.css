@@ -1,0 +1,57 @@
+/*Fondo de la página */
+body{
+    background-image: url(../IMG/pendulum-1934311_1280.jpg); 
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+}
+
+/*Contenedor del mapa */
+.mapa-container {
+    display: flex;               
+    justify-content: center;      
+    align-items: center;         
+    min-height: 80vh;             
+}
+
+/*Estilo del iframe (Google Maps) */
+.mapa-container iframe {
+    width: 80vw;                 
+    max-width: 900px;             
+    height: 500px;                 
+    border: 4px solid #ffb700;    
+    border-radius: 18px;           
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15); 
+}
+
+/*Botón de volver al inicio */
+.btn-volver {
+    display: block;                
+    margin: 24px auto;             
+    padding: 12px 24px;            
+    font-size: 18px;               
+    background: #2E8B57;
+    background: linear-gradient(90deg, rgba(46, 139, 87, 1) 0%, rgba(22, 224, 177, 1) 100%);  
+    color: white;               
+    text-decoration: none;        
+    border-radius: 8px;           
+    text-align: center;          
+    transition: background-color 0.3s; 
+}
+
+/*Efecto al pasar el mouse por encima del botón */
+.btn-volver:hover {
+    background-color: #45a049;
+}
+
+/*footer*/
+@media (max-width: 767px) {
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-container section {
+    margin-bottom: 1.5rem;
+  }
+}

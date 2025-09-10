@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reseñas de Productos - HuertoHogar</title>
+  <link rel="stylesheet" href="Reseñas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Encabezado -->
+  <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand" href="#" style="font-size: 30px;">
+            <h1>HUERTO HOGAR</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Catalogo/Frutas.html">Frutas Frescas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Catalogo/Verduras.html">Verduras Orgánicas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Catalogo/Prod_organicos.html">Productos Orgánicos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Catalogo/Prod_lacteos.html">Productos Lácteos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Cuenta/Inic_sesion.html">Inicia Sesión</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Cuenta/Registrar.html">Regístrate</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Cuenta/Mi_cuenta.html">Mi Cuenta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+          <!-- Carrito de compras -->
+          <div class="d-flex align-items-center ms-2 ms-lg-4 mt-2 mt-lg-0">
+            <a href="Carrito/Carrito.html" 
+              class="btn position-relative" 
+              id="carritoBtn" style="font-size: 1.5rem;">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="28" height="28" 
+                  fill="currentColor" 
+                  class="bi bi-cart text-dark" 
+                  viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 
+                        .485.379L2.89 5H14.5a.5.5 0 0 1 
+                        .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 
+                        0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 
+                        1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 
+                        16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 
+                        0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 
+                        0 0 0 0 3z"/>
+              </svg>
+
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carritoContador">
+                0
+                <span class="visually-hidden">productos en el carrito</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        
+      </nav>
+    </header>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <!-- Reseña 1 -->
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Miel Orgánica</h5>
+            <p class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </p>
+            <p class="card-text">Excelente calidad, sabor natural y muy buena presentación.</p>
+            <small class="text-muted">Por: María López</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reseña 2 -->
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Tomates Cherry</h5>
+            <p class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </p>
+            <p class="card-text">Frescos, pero me llegaron algunos un poco verdes aún.</p>
+            <small class="text-muted">Por: Juan Pérez</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reseña 3 -->
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Lechuga Hidropónica</h5>
+            <p class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </p>
+            <p class="card-text">Muy fresca y dura varios días en el refrigerador.</p>
+            <small class="text-muted">Por: Ana González</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario para nueva reseña -->
+    <section class="mt-5">
+      <h3 class="mb-3 text-success">Deja tu reseña</h3>
+      <form>
+        <div class="mb-3">
+          <label for="producto" class="form-label">Producto</label>
+          <input type="text" id="producto" class="form-control" placeholder="Ej: Miel Orgánica" required>
+        </div>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Tu nombre</label>
+          <input type="text" id="nombre" class="form-control" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentario</label>
+          <textarea id="comentario" class="form-control" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Puntuación</label>
+          <select class="form-select" required>
+            <option value="">Selecciona...</option>
+            <option value="5">⭐⭐⭐⭐⭐ - Excelente</option>
+            <option value="4">⭐⭐⭐⭐ - Muy bueno</option>
+            <option value="3">⭐⭐⭐ - Aceptable</option>
+            <option value="2">⭐⭐ - Regular</option>
+            <option value="1">⭐ - Malo</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar reseña</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+    <footer>
+      <div class="footer-container">
+        <section>
+          <h3>Misión</h3>
+          <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta la puerta de nuestros clientes, garantizando la frescura y el sabor en cada entrega. Nos comprometemos a fomentar una conexión más cercana entre los consumidores y los agricultores locales, apoyando prácticas agrícolas sostenibles y promoviendo una alimentación saludable en todos los hogares chilenos.</p>
+          <h3>Visión</h3>
+          <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en Chile, reconocida por nuestra calidad excepcional, servicio al cliente y compromiso con la sostenibilidad. Aspiramos a expandir nuestra presencia a nivel nacional e internacional, estableciendo un nuevo estándar en la distribución de productos agrícolas directos del productor al consumidor.</p>
+          <a href="Mapa/Tiendas.html"><h3>Tiendas</h3></a>
+          <ul>
+            <li>Santiago</li>
+            <li>Puerto Montt</li>
+            <li>Villarica</li>
+            <li>Nacimiento</li>
+            <li>Viña del Mar</li>
+            <li>Valparaíso</li>
+            <li>Concepción</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li><a href="Redes_fake/Facebook_fake.html">Facebook</a></li>
+            <li><a href="Redes_fake/Instagram_fake.html">Instagram</a></li>
+            <li><a href="Redes_fake/Twitter_fake.html">Twitter</a></li>
+          </ul>
+          <h3>Centro de Ayuda</h3>
+          <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Políticas de despacho</a></li>
+            <li><a href="#">Devoluciones</a></li>
+          </ul>
+          <h3>Contacto</h3>
+          <p>Email: contacto@huertohogar.cl</p>
+          <p>Tel: +56 9 1234 5678</p>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HuertoHogar - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
