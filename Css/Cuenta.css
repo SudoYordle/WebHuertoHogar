@@ -1,0 +1,27 @@
+
+/*color sacado de CSS Gradient*/
+.bg-custom {
+    background: #2E8B57;
+    background: linear-gradient(90deg, rgba(46, 139, 87, 1) 0%, rgba(22, 224, 177, 1) 100%);
+}
+
+/*Color para los errores*/
+.error-message {
+    color: #d32f2f;
+    font-size: 0.95em;
+    margin-bottom: 4px;
+    min-height: 18px;
+    display: block;
+}
+
+/*footer*/
+@media (max-width: 767px) {
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-container section {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,31 @@
+
+/*General*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-custom {
+    background: #2E8B57;
+    background: linear-gradient(90deg, rgba(46, 139, 87, 1) 0%, rgba(22, 224, 177, 1) 100%);
+}
+
+.carrito-item button {
+    min-width: 35px;
+}
+
+.carrito-item span {
+    min-width: 20px;
+    text-align: center;
+}
+
+/*footer*/
+@media (max-width: 767px) {
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-container section {
+    margin-bottom: 1.5rem;
+  }
+}

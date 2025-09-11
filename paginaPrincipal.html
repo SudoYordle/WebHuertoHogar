@@ -4,57 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Huerto Hogar</title>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Css/Styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Encabezado y navegación principal -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid p-4" style="background-color: #ffb700;">
-          <a class="navbar-brand" href="#" style="font-size: 30px;">
-            <h1>HUERTO HOGAR</h1>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand fw-bold text-success" href="paginaPrincipal.html">
+            <span class="d-none d-sm-inline fs-2"><h1>HUERTO HOGAR</h1></span>
+            <span class="d-inline d-sm-none fs-4"><h1>Huerto Hogar</h1></span>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Blog.html">Blog</a>
+                <a class="nav-link active fw-bold" aria-current="page" href="Blog.html" >Blog</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Catalogo/Frutas.html">Frutas Frescas</a></li>
+                  <li><a class="dropdown-item" href="Frutas.html">Frutas Frescas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Catalogo/Verduras.html">Verduras Orgánicas</a></li>
+                  <li><a class="dropdown-item" href="Verduras.html">Verduras Orgánicas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Catalogo/Prod_organicos.html">Productos Orgánicos</a></li>
+                  <li><a class="dropdown-item" href="Prod_organicos.html">Productos Orgánicos</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Catalogo/Prod_lacteos.html">Productos Lácteos</a></li>
+                  <li><a class="dropdown-item" href="Prod_lacteos.html">Productos Lácteos</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Cuenta/Inic_sesion.html">Inicia Sesión</a></li>
+                  <li><a class="dropdown-item" href="Inic_sesion.html">Inicia Sesión</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Cuenta/Registrar.html">Regístrate</a></li>
+                  <li><a class="dropdown-item" href="Registrar.html">Regístrate</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Cuenta/Mi_cuenta.html">Mi Cuenta</a></li>
+                  <li><a class="dropdown-item" href="Mi_cuenta.html">Mi Cuenta</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
           <!-- Carrito de compras -->
-          <div class="d-flex align-items-center" style="margin-left: 40px;">
-            <a href="Carrito/Carrito.html" class="btn position-relative" id="carritoBtn" style="font-size: 1.5rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          <div class="d-flex align-items-center ms-2 ms-lg-4 mt-2 mt-lg-0">
+            <a href="Carrito.html" 
+              class="btn position-relative" 
+              id="carritoBtn" style="font-size: 1.5rem;">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="28" height="28" 
+                  fill="currentColor" 
+                  class="bi bi-cart text-dark" 
+                  viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 
+                        .485.379L2.89 5H14.5a.5.5 0 0 1 
+                        .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 
+                        0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 
+                        1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 
+                        16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 
+                        0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 
+                        0 0 0 0 3z"/>
               </svg>
+
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carritoContador">
                 0
                 <span class="visually-hidden">productos en el carrito</span>
@@ -62,96 +84,227 @@
             </a>
           </div>
         </div>
+        
       </nav>
     </header>
 
     <main>
+      <main class="d-flex justify-content-center my-4">
+        <img class="img-huerto img-fluid mx-auto d-block" src="IMG/Screenshot 2025-09-07 at 13-05-55 DSY1104 - Forma A tienda HUERTO HOGAR.pdf.png" alt="img-huerto">
+      </main>
       <!-- Sección de categorías destacadas -->
-      <section class="categorias-destacadas m-3">
-        <h1 class="text-center mb-4" style="font-size: 3rem; letter-spacing: 2px; color: #ffd966; text-shadow: 2px 2px 8px #ffd966;">Categorías Destacadas</h1>
-        <div class="row justify-content-center">
-          <article class="col-md-3 col-6 mb-4">
-            <div class="card h-100 text-center">
-              <img src="img/FRUTAS-CHARITO-PORTADA-431.png" class="card-img-top img-categoria" alt="Frutas frescas">
-              <div class="card-body">
-                <h3 class="card-title">Frutas Frescas</h3>
-                <a href="Catalogo/Frutas.html" class="btn btn-outline-success">Ver más</a>
+      <section class="categorias-destacadas py-4 bg-light">
+        <div class="container">
+          <h1 class="text-center mb-5" style="font-size: 3rem; letter-spacing: 2px; color: #000000; text-shadow: 2px 2px 8px #ebdd8f;">
+            Categorías Destacadas
+          </h1>
+          <div class="row justify-content-center g-4">
+            <article class="col-12 col-sm-6 col-md-5 col-lg-3 d-flex">
+              <div class="card w-100 text-center shadow-sm h-100">
+                <img src="img/FRUTAS-CHARITO-PORTADA-431.png" class="card-img-top img-categoria" alt="Frutas frescas">
+                <div class="card-body d-flex flex-column bg-custom">
+                  <h3 class="card-title">Frutas Frescas</h3>
+                  <a href="Frutas.html" class="btn btn-outline-success mt-auto">Ver más</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="col-md-3 col-6 mb-4">
-            <div class="card h-100 text-center">
-              <img src="img/istockphoto-1203599923-170667a.jpg" class="card-img-top img-categoria" alt="Verduras orgánicas">
-              <div class="card-body">
-                <h3 class="card-title">Verduras Orgánicas</h3>
-                <a href="Catalogo/Verduras.html" class="btn btn-outline-success">Ver más</a>
+            </article>
+
+            <article class="col-12 col-sm-6 col-md-5 col-lg-3 d-flex">
+              <div class="card w-100 text-center shadow-sm h-100">
+                <img src="img/istockphoto-1203599923-170667a.jpg" class="card-img-top img-categoria" alt="Verduras orgánicas">
+                <div class="card-body d-flex flex-column bg-custom">
+                  <h3 class="card-title">Verduras Orgánicas</h3>
+                  <a href="Verduras.html" class="btn btn-outline-success mt-auto">Ver más</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="col-md-3 col-6 mb-4">
-            <div class="card h-100 text-center">
-              <img src="img/productos-lacteos.jpg" class="card-img-top img-categoria" alt="Productos lácteos">
-              <div class="card-body">
-                <h3 class="card-title">Productos Lácteos</h3>
-                <a href="Catalogo/Prod_lacteos.html" class="btn btn-outline-success">Ver más</a>
+            </article>
+
+            <article class="col-12 col-sm-6 col-md-5 col-lg-3 d-flex">
+              <div class="card w-100 text-center shadow-sm h-100">
+                <img src="img/productos-lacteos.jpg" class="card-img-top img-categoria" alt="Productos lácteos">
+                <div class="card-body d-flex flex-column bg-custom">
+                  <h3 class="card-title">Productos Lácteos</h3>
+                  <a href="Prod_lacteos.html" class="btn btn-outline-success mt-auto">Ver más</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="col-md-3 col-6 mb-4">
-            <div class="card h-100 text-center">
-              <img src="img/alimentos-integrales-1024x576.jpg" class="card-img-top img-categoria" alt="Productos orgánicos">
-              <div class="card-body">
-                <h3 class="card-title">Productos Orgánicos</h3>
-                <a href="Catalogo/Prod_organicos.html" class="btn btn-outline-success">Ver más</a>
+            </article>
+
+            <article class="col-12 col-sm-6 col-md-5 col-lg-3 d-flex">
+              <div class="card w-100 text-center shadow-sm h-100">
+                <img src="img/alimentos-integrales-1024x576.jpg" class="card-img-top img-categoria" alt="Productos orgánicos">
+                <div class="card-body d-flex flex-column bg-custom">
+                  <h3 class="card-title">Productos Orgánicos</h3>
+                  <a href="Prod_organicos.html" class="btn btn-outline-success mt-auto">Ver más</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
       <!-- Carrusel de productos destacados -->
-      <section class="productos-destacadas m-3" aria-label="Productos destacados">
-        <h2 class="text-center mb-4" style="font-size: 3rem; letter-spacing: 2px; color: #2E8B57; text-shadow: 2px 2px 8px #ffd966;">Productos Destacados</h2>
-        <div id="carouselExampleIndicators" class="carousel slide">
+      <section class="productos-destacadas m-3 bg-custom" aria-label="Productos destacados">
+        <h2 class="text-center mb-4" style="font-size: 3rem; letter-spacing: 2px; color: #000000; text-shadow: 2px 2px 8px #ffd966;">Productos Destacados</h2>
+
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <article class="carousel-item active">
-              <img src="https://freshmate.cl/cdn/shop/files/naranjas_en_bowl_de_madera_2__29_11zon.webp?v=1724716537&width=713" class="card-img-top img-categoria2" alt="Naranjas Valencia">
-              <div class="card-body">
-                <h3 class="card-title">Naranjas Valencia</h3>
-                <p class="card-text">Jugosas y ricas en vitamina C, estas naranjas Valencia son ideales para zumos frescos y refrescantes. Cultivadas en condiciones climáticas óptimas que aseguran su dulzura y jugosidad.</p>
-                <a href="#" class="btn btn-primary">Ir a la página</a>
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active bg-custom">
+              <div class="row justify-content-center g-4 align-items-stretch">
+                <!-- Producto 1 -->
+                <div class="col-12 col-sm-4 d-flex">
+                  <div class="card w-100 text-center shadow-sm flex-column">
+                    <img src="https://freshmate.cl/cdn/shop/files/manzanas_fuji_en_bowl_de_madera_21_11zon.webp?v=1724716431&width=713" class="card-img-top img-categoria2" alt="Manzana Fuji">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title">Manzana Fuji</h3>
+                      <p class="card-text">Perfectas para meriendas saludables o como ingrediente en postres.</p>
+                      <a href="Frutas.html" class="btn btn-primary mt-auto">Ir a la página</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-12 col-sm-4 d-flex ">
+                  <div class="card w-100 text-center shadow-sm flex-column">
+                    <img src="https://freshmate.cl/cdn/shop/files/platano_en_tabla_de_madera_50_11zon.webp?v=1724716888&width=713" class="card-img-top img-categoria2" alt="Platano Cavendish">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title">Platano Cavendish</h3>
+                      <p class="card-text">Perfectas para el desayuno o como snack energético.</p>
+                      <a href="Frutas.html" class="btn btn-primary mt-auto">Ir a la página</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </article>
-            <article class="carousel-item">
-              <img src="IMG/img2.rtve.jpg" class="card-img-top img-categoria2" alt="Zanahorias">
-              <div class="card-body">
-                <h3 class="card-title">Zanahorias</h3>
-                <p class="card-text">Crujientes, dulces y de intenso color naranja. Son una fuente natural de vitaminas y antioxidantes, perfectas para consumir crudas, en ensaladas, jugos o como base de guisos y sopas.</p>
-                <a href="#" class="btn btn-primary">Ir a la página</a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item bg-custom">
+              <div class="row justify-content-center g-4 align-items-stretch">
+                <!-- Producto 3 -->
+                <div class="col-12 col-sm-4 d-flex">
+                  <div class="card w-100 text-center shadow-sm flex-column">
+                    <img src="https://freshmate.cl/cdn/shop/files/naranjas_en_bowl_de_madera_2__29_11zon.webp?v=1724716537&width=713" class="card-img-top img-categoria2" alt="Naranja Valencia">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title">Naranja Valencia</h3>
+                      <p class="card-text">Ideales para zumos frescos y refrescantes.</p>
+                      <a href="Frutas.html" class="btn btn-primary mt-auto">Ir a la página</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-12 col-sm-4 d-flex">
+                  <div class="card w-100 text-center shadow-sm flex-column">
+                    <img src="https://freshmate.cl/cdn/shop/files/zanahoria_en_tabla_de_madera_25_11zon.webp?v=1724717281&width=713" class="card-img-top img-categoria2" alt="Zanahorias Orgánicas">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title">Zanahorias Orgánicas</h3>
+                      <p class="card-text">Ideales para ensaladas, jugos o como snack saludable.</p>
+                      <a href="Verduras.html" class="btn btn-primary mt-auto">Ir a la página</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </article>
-            <article class="carousel-item">
-              <img src="IMG/quesofresco-header_3.jpg" class="card-img-top img-categoria2" alt="Queso Cremoso">
-              <div class="card-body">
-                <h3 class="card-title">Queso Cremoso</h3>
-                <p class="card-text">Cremoso y suave, con un sabor delicado y natural. Ideal para acompañar ensaladas, panes, frutas o como ingrediente en múltiples preparaciones, aportando frescura y proteína de calidad.</p>
-                <a href="#" class="btn btn-primary">Ir a la página</a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item bg-custom">
+              <div class="row justify-content-center g-4 align-items-stretch">
+                <!-- Producto 5 -->
+                <div class="col-12 col-sm-4 d-flex">
+                  <div class="card w-100 text-center shadow-sm flex-column">
+                    <img src="https://freshmate.cl/cdn/shop/files/espinaca_deshojada_en_tabla_de_madera_50_11zon.webp?v=1724716120&width=713" class="card-img-top img-categoria2" alt="Naranja Valencia">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title">Espinacas Frescas</h3>
+                      <p class="card-text">Perfectas para ensaladas y batidos verdes.</p>
+                      <a href="Frutas.html" class="btn btn-primary mt-auto">Ir a la página</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-12 col-sm-4 d-flex">
+                  <div class="card w-100 text-center shadow-sm flex-column">
+                    <img src="https://freshmate.cl/cdn/shop/files/pimenton_amarillo_en_tabla_de_madera_41.webp?v=1724716749&width=713" class="card-img-top img-categoria2" alt="Zanahorias Orgánicas">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title">Pimientos Tricolores</h3>
+                      <p class="card-text">Ideales para salteados y platos coloridos.</p>
+                      <a href="Verduras.html" class="btn btn-primary mt-auto">Ir a la página</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </article>
+            </div>
+
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          
+
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
           </button>
         </div>
       </section>
 
+      <!-- Promosiones -->
+      <section class="promociones py-5 bg-custom text-white">
+        <div class="container text-center">
+          <h2 class="mb-4">Promociones de la Semana</h2>
+          <p>¡Hasta 20% de descuento en frutas frescas seleccionadas!</p>
+          <a href="Frutas.html" class="btn btn-light">Ver promociones</a>
+        </div>
+      </section>
+
+      <!-- Opiniones -->
+      <section class="testimonios py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+          <div class="row justify-content-center g-4">
+
+            <div class="col-md-4 d-flex">
+              <div class="card p-3 shadow-sm flex-fill d-flex flex-column">
+                <p class="flex-grow-1">"Los productos llegan súper frescos y bien embalados. ¡Recomendado!"</p>
+                <h5 class="text-end mt-3">- María P.</h5>
+              </div>
+            </div>
+
+            <div class="col-md-4 d-flex">
+              <div class="card p-3 shadow-sm flex-fill d-flex flex-column">
+                <p class="flex-grow-1">"Excelente atención y variedad de productos. Siempre compro aquí. Muy buena experiencia."</p>
+                <h5 class="text-end mt-3">- Juan C.</h5>
+              </div>
+            </div>
+
+            <div class="col-md-4 d-flex">
+              <div class="card p-3 shadow-sm flex-fill d-flex flex-column">
+                <p class="flex-grow-1">"Me encanta la calidad de las frutas y verduras. Todo llega fresco y rápido."</p>
+                <h5 class="text-end mt-3">- Ana R.</h5>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-3">
+              <a href="Reseñas.html" class="btn btn-custom btn-lg w-100 w-md-auto">
+                Reseñas
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Boletin -->
+      <section class="newsletter py-5 bg-custom text-white">
+        <div class="container text-center">
+          <h2 class="mb-4">Suscríbete a nuestro boletín</h2>
+          <form class="d-flex justify-content-center">
+            <input type="email" placeholder="Tu correo electrónico" class="form-control w-50 me-2" required>
+            <button type="submit" class="btn btn-light">Suscribirse</button>
+          </form>
+        </div>
+      </section>
+
       <!-- Sección de beneficios -->
-      <section class="beneficios py-5 bg-light">
+      <section class="beneficios py-5 bg-light" >
         <div class="container">
           <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
           <div class="row text-center">
@@ -183,7 +336,7 @@
           <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta la puerta de nuestros clientes, garantizando la frescura y el sabor en cada entrega. Nos comprometemos a fomentar una conexión más cercana entre los consumidores y los agricultores locales, apoyando prácticas agrícolas sostenibles y promoviendo una alimentación saludable en todos los hogares chilenos.</p>
           <h3>Visión</h3>
           <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en Chile, reconocida por nuestra calidad excepcional, servicio al cliente y compromiso con la sostenibilidad. Aspiramos a expandir nuestra presencia a nivel nacional e internacional, estableciendo un nuevo estándar en la distribución de productos agrícolas directos del productor al consumidor.</p>
-          <a href="Mapa/Tiendas.html"><h3>Tiendas</h3></a>
+          <a href="Tiendas.html"><h3>Tiendas</h3></a>
           <ul>
             <li>Santiago</li>
             <li>Puerto Montt</li>
@@ -197,9 +350,9 @@
         <section>
           <h3>Redes Sociales</h3>
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="Redes_fake/Facebook_fake.html">Facebook</a></li>
+            <li><a href="Redes_fake/Instagram_fake.html">Instagram</a></li>
+            <li><a href="Redes_fake/Twitter_fake.html">Twitter</a></li>
           </ul>
           <h3>Centro de Ayuda</h3>
           <ul>
@@ -216,7 +369,7 @@
         <p>© 2025 HuertoHogar - Todos los derechos reservados</p>
       </div>
     </footer>
-
+    
     <!-- Scripts de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

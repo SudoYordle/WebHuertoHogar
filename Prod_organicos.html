@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo - Productos Lacteos</title>
+    <link rel="stylesheet" href="Css/Catalogo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- Encabezado y navegación principal -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand fw-bold text-success" href="paginaPrincipal.html">
+            <span class="d-none d-sm-inline fs-2"><h1>HUERTO HOGAR</h1></span>
+            <span class="d-inline d-sm-none fs-4"><h1>Huerto Hogar</h1></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="Blog.html" >Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Frutas.html">Frutas Frescas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Verduras.html">Verduras Orgánicas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Prod_organicos.html">Productos Orgánicos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Prod_lacteos.html">Productos Lácteos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Inic_sesion.html">Inicia Sesión</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Registrar.html">Regístrate</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Mi_cuenta.html">Mi Cuenta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+          <!-- Carrito de compras -->
+          <div class="d-flex align-items-center ms-2 ms-lg-4 mt-2 mt-lg-0">
+            <a href="Carrito.html" 
+              class="btn position-relative" 
+              id="carritoBtn" style="font-size: 1.5rem;">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="28" height="28" 
+                  fill="currentColor" 
+                  class="bi bi-cart text-dark" 
+                  viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 
+                        .485.379L2.89 5H14.5a.5.5 0 0 1 
+                        .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 
+                        0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 
+                        1-.5-.5zm3.14 4l1.25 6.5h7.22l1.25-6.5H3.14zM5.5 
+                        16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 
+                        0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 
+                        0 0 0 0 3z"/>
+              </svg>
+
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carritoContador">
+                0
+                <span class="visually-hidden">productos en el carrito</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        
+      </nav>
+    </header>
+
+    <section class="promociones py-5 bg-custom text-white m-3">
+        <div class="container text-center">
+          <h1 class="mb-4">Productos Lacteos</h1>
+          <p>Nuestros productos orgánicos están elaborados con ingredientes naturales y
+            procesados de manera responsable para mantener sus beneficios saludables. Desde aceites
+            y miel hasta granos y semillas, ofrecemos una selección que apoya un estilo de vida
+            saludable y respetuoso con el medio ambiente. Estos productos son perfectos para quienes
+            buscan opciones alimenticias que aporten bienestar sin comprometer el sabor ni la calidad.</p>
+        </div>
+    </section>
+
+<!-- Catálogo principal -->
+    <main class="container mt-5 bg-custom">
+        <h1 class="mb-3 text-center fw-bold" style="font-size: 3rem; letter-spacing: 2px; color: #2E8B57; text-shadow: 2px 2px 8px #ffd966;">
+            Productos Lacteos
+        </h1>
+        <div class="mb-4 text-center">
+            <input type="text" id="filtroFrutas" class="form-control w-50 mx-auto" placeholder="Buscar productos por nombre o código...">
+        </div>
+        <section class="row">
+
+            <!-- PRODUCTOS -->
+            <!-- Miel Orgánica -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <div class="card-img-container">
+                        <img src="https://mielysabor.com/cdn/shop/articles/roberta-sorge-kp9UVn-PUac-unsplash_1024x1024.jpg?v=1671455504"
+                            alt="Miel Orgánica"
+                            class="img-clickable"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imagenModal">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Miel Orgánica</h5>
+                        <h6 class="card-cod">PO001</h6>
+                        <p class="card-text">Precio: $5,000 CLP por frasco de 500g</p>
+                        <p class="card-text">Stock: 50 frascos</p>
+                        <p class="card-text">Miel pura y orgánica producida por apicultores locales. Rica en
+                                            antioxidantes y con un sabor inigualable, perfecta para endulzar de manera natural tus
+                                            comidas y bebidas.</p>
+                        <div class="container-btn d-flex gap-2">
+                            <input type="number" min="1" value="1" class="form-control cantidad" style="width: 80px;">
+                            <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Aceite de Oliva Extra Virgen -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <div class="card-img-container">
+                        <img src="https://cdnx.jumpseller.com/comercializadora-sofar-spa/image/63767592/resize/1079/1079?1748133805"
+                            alt="Aceite de Oliva Extra Virgen"
+                            class="img-clickable"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imagenModal">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Aceite de Oliva Extra Virgen</h5>
+                        <h6 class="card-cod">PO002</h6>
+                        <p class="card-text">Precio: $5,500 CLP por botella de 500ml</p>
+                        <p class="card-text">Stock: 30 botellas</p>
+                        <p class="card-text">Aceite de oliva prensado en frío, 100% orgánico. Ideal para aderezar ensaladas, cocinar y mantener un estilo de vida saludable.</p>
+                        <div class="container-btn d-flex gap-2">
+                            <input type="number" min="1" value="1" class="form-control cantidad" style="width: 80px;">
+                            <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quinoa Orgánica -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <div class="card-img-container">
+                        <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now06311/l/13.jpg"
+                            alt="Quinoa Orgánica"
+                            class="img-clickable"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imagenModal">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Quinoa Orgánica</h5>
+                        <h6 class="card-cod">PO003</h6>
+                        <p class="card-text">Precio: $3,200 CLP por bolsa de 500g</p>
+                        <p class="card-text">Stock: 40 bolsas</p>
+                        <p class="card-text">Granos de quinoa certificados como orgánicos, libres de pesticidas. Fuente de proteína vegetal y fibra, perfecta para una alimentación balanceada.</p>
+                        <div class="container-btn d-flex gap-2">
+                            <input type="number" min="1" value="1" class="form-control cantidad" style="width: 80px;">
+                            <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Té Verde Orgánico -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <div class="card-img-container">
+                        <img src="https://cdnx.jumpseller.com/espesales/image/38657461/resize/640/640?1692652742"
+                            alt="Té Verde Orgánico"
+                            class="img-clickable"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imagenModal">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Té Verde Orgánico</h5>
+                        <h6 class="card-cod">PO004</h6>
+                        <p class="card-text">Precio: $4,500 CLP por caja de 50 bolsitas</p>
+                        <p class="card-text">Stock: 60 Cajas</p>
+                        <p class="card-text">Hojas de té verde cultivadas sin químicos. Refrescante, antioxidante y excelente para mejorar la digestión y concentración diaria.</p>
+                        <div class="container-btn d-flex gap-2">
+                            <input type="number" min="1" value="1" class="form-control cantidad" style="width: 80px;">
+                            <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cacao Orgánico en Polvo -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <div class="card-img-container">
+                        <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now06672/l/60.jpg"
+                            alt="Cacao Orgánico en Polvo"
+                            class="img-clickable"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imagenModal">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cacao Orgánico en Polvo</h5>
+                        <h6 class="card-cod">PO005</h6>
+                        <p class="card-text">Precio: $6,500 CLP por tarro de 340g</p>
+                        <p class="card-text">Stock: 70 tarros</p>
+                        <p class="card-text">Cacao puro orgánico, ideal para repostería y bebidas. Rico en antioxidantes y con un sabor intenso, sin aditivos ni azúcares añadidos.</p>
+                        <div class="container-btn d-flex gap-2">
+                            <input type="number" min="1" value="1" class="form-control cantidad" style="width: 80px;">
+                            <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Almendras Orgánicas -->
+            <article class="col-md-4 mb-4">
+                <div class="card h-100 rounded-3">
+                    <div class="card-img-container">
+                        <img src="https://agourmet.cl/cdn/shop/products/almendras-naturales.jpg?v=1622883483"
+                            alt="Almendras Orgánicas"
+                            class="img-clickable"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imagenModal">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Almendras Orgánicas</h5>
+                        <h6 class="card-cod">PO006</h6>
+                        <p class="card-text">Precio: $7,200 CLP por bolsa de 300g</p>
+                        <p class="card-text">Stock: 45 bolsas</p>
+                        <p class="card-text">Almendras cultivadas de forma orgánica, sin pesticidas ni químicos. Perfectas para snacks, repostería o como complemento en ensaladas y desayunos saludables.</p>
+                        <div class="container-btn d-flex gap-2">
+                            <input type="number" min="1" value="1" class="form-control cantidad" style="width: 80px;">
+                            <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Modal único reutilizable -->
+    <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-body p-0">
+            <img src="" id="imagenModalSrc" class="img-fluid" alt="Imagen del producto">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <section>
+                <h3>Misión</h3>
+                <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta la puerta de nuestros clientes...</p>
+                <h3>Visión</h3>
+                <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en Chile...</p>
+                <a href="Tiendas.html"><h3>Tiendas</h3></a>
+                <ul>
+                    <li>Santiago</li>
+                    <li>Puerto Montt</li>
+                    <li>Villarica</li>
+                    <li>Nacimiento</li>
+                    <li>Viña del Mar</li>
+                    <li>Valparaíso</li>
+                    <li>Concepción</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="../Redes_fake/Facebook_fake.html">Facebook</a></li>
+                    <li><a href="../Redes_fake/Instagram_fake.html">Instagram</a></li>
+                    <li><a href="../Redes_fake/Twitter_fake.html">Twitter</a></li>
+                </ul>
+                <h3>Centro de Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Políticas de despacho</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+                <h3>Contacto</h3>
+                <p>Email: contacto@huertohogar.cl</p>
+                <p>Tel: +56 9 1234 5678</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 HuertoHogar - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para modal de imágenes -->
+    <!-- Prueba del modal de bootstrap, no se si lo quitare pero lo dejare por ahora-->
+    <script>
+    const imagenModalSrc = document.getElementById('imagenModalSrc');
+    document.querySelectorAll('.img-clickable').forEach(img => {
+        img.addEventListener('click', () => {
+        imagenModalSrc.src = img.src;
+        });
+    });
+    </script>
+
+    <script src="Js/Catalogo.js"></script>
+
+</body>
+</html>

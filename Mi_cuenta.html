@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Cuenta - Huerto Hogar</title>
+  <link rel="stylesheet" href="Css/Cuenta.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-custom d-flex align-items-center min-vh-100">
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9 col-lg-6">
+        <div class="card shadow-lg border-0 rounded-3 p-4">
+
+          <!-- Botón de volver a inicio -->
+          <div class="text-start mb-3">
+            <a href="paginaPrincipal.html" class="text-decoration-none text-success fs-4">
+              <i class="bi bi-house-door-fill"></i>
+            </a>
+          </div>
+
+          <h2 class="text-center mb-4 text-success">Mi Cuenta</h2>
+
+          <ul class="nav nav-tabs mb-3" id="cuentaTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button">Información</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contraseña-tab" data-bs-toggle="tab" data-bs-target="#contraseña" type="button">Contraseña</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="preferencias-tab" data-bs-toggle="tab" data-bs-target="#preferencias" type="button">Preferencias</button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- Información -->
+            <div class="tab-pane fade show active" id="info">
+              <div class="text-center mb-3">
+                <img src="https://via.placeholder.com/120" alt="Foto de perfil" class="rounded-circle mb-2">
+                <input type="file" id="fotoPerfil" class="form-control form-control-sm" accept="image/*">
+              </div>
+              <form id="formCuenta">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre:</label>
+                  <input type="text" id="nombre" class="form-control" value="Juan Pérez" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" id="email" class="form-control" value="juanperez@email.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="direccion" class="form-label">Dirección:</label>
+                  <input type="text" id="direccion" class="form-control" value="Av. Siempre Viva 123" required>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn fw-bold" style="background-color:#ffb700; color:#222;">Guardar cambios</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="tab-pane fade" id="contraseña">
+              <form id="formContraseña">
+                <div class="mb-3">
+                  <label for="password" class="form-label">Nueva contraseña:</label>
+                  <input type="password" id="password" class="form-control" placeholder="********">
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirmar contraseña:</label>
+                  <input type="password" id="confirmPassword" class="form-control" placeholder="********">
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn fw-bold" style="background-color:#ffb700; color:#222;">Actualizar contraseña</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Preferencias -->
+            <div class="tab-pane fade" id="preferencias">
+              <form id="formPreferencias">
+                <div class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="notificaciones" checked>
+                  <label class="form-check-label" for="notificaciones">Recibir notificaciones por email</label>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn fw-bold" style="background-color:#ffb700; color:#222;">Guardar preferencias</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="Js/Cuenta.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

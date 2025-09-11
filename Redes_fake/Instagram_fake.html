@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: rgb(241, 183, 57);
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h3 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .story, .suggestion {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .post {
+            background-color: white;
+            margin-bottom: 20px;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+        }
+        .post img {
+            width: 100%;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .post .post-content {
+            padding: 10px;
+        }
+        .post .post-content textarea {
+            width: 100%;
+            resize: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h3>Mini Instagram</h3>
+        <input type="text" class="form-control w-50" placeholder="Buscar">
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- Barra lateral izquierda: Historias -->
+            <div class="col-md-3">
+                <div class="story">
+                    <h6>Historias</h6>
+                    <ul>
+                        <li>Juan</li>
+                        <li>María</li>
+                        <li>Carlos</li>
+                        <li>Laura</li>
+                    </ul>
+                </div>
+
+                <div class="suggestion">
+                    <h6>Personas que quizá conozcas</h6>
+                    <ul>
+                        <li>Pedro</li>
+                        <li>Isabel</li>
+                        <li>Andrés</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feed principal -->
+            <div class="col-md-6">
+                <!-- Publicación de ejemplo -->
+                <div class="post">
+                    <div class="post-header d-flex align-items-center p-2">
+                        <strong>Juan Pérez</strong>
+                    </div>
+                    <img src="https://via.placeholder.com/500x300.png?text=Imagen+de+Post" alt="Post de Juan">
+                    <div class="post-content">
+                        <p>¡Disfrutando del atardecer en la playa! 🌅</p>
+                        <small class="text-muted">Hace 2 horas</small>
+                        <textarea rows="2" placeholder="Añadir un comentario..."></textarea>
+                        <button class="btn btn-primary btn-sm mt-2">Comentar</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header d-flex align-items-center p-2">
+                        <strong>María López</strong>
+                    </div>
+                    <img src="https://via.placeholder.com/500x300.png?text=Imagen+de+Post" alt="Post de María">
+                    <div class="post-content">
+                        <p>Receta de brownies lista! 🍫😍</p>
+                        <small class="text-muted">Hace 5 horas</small>
+                        <textarea rows="2" placeholder="Añadir un comentario..."></textarea>
+                        <button class="btn btn-primary btn-sm mt-2">Comentar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Barra lateral derecha: Sugerencias -->
+            <div class="col-md-3">
+                <div class="suggestion">
+                    <h6>Sugerencias</h6>
+                    <ul>
+                        <li>Seguir a Pedro</li>
+                        <li>Seguir a Isabel</li>
+                        <li>Seguir a Andrés</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
